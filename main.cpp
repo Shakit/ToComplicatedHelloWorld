@@ -8,7 +8,19 @@
 
 #include <iostream>
 #include <string>
+#include "Hello.hpp"
 
+
+int main(int argc, char** argv)
+{
+	std::string hello = "Hello World !";
+	Hello * pHello = new Hello(hello);
+	
+	pHello->sayHello();
+	
+	return 0;
+}
+/*
 int main(int argc, char** argv)
 {
 	std::string hello = "Hello World !";
@@ -18,3 +30,4 @@ int main(int argc, char** argv)
 	
 	return 0;
 }
+*/
