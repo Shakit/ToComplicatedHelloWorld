@@ -7,12 +7,16 @@
   Pourquoi ne pas utiliser la POO pour un "simple" Hello World
   ============================================================*/
 
-
+//includes
 #include "Hello.hpp"
 #include "iostream"
 
+//============================================================
+// Constructeur
 Hello::Hello(std::string hello) : hello_(hello) {}
 
+//============================================================
+// methode d'affichage
 void Hello::sayHello(void)
 {
 	std::cout << hello_

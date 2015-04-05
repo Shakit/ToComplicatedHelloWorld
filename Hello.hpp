@@ -7,17 +7,22 @@
   Pourquoi ne pas utiliser la POO pour un "simple" Hello World
   ============================================================*/
 
-
 #ifndef HELLO_HPP
 #define HELLO_HPP
 
+// includes
 #include <string>
 
+//============================================================
 class Hello
 {
 public :
+	//Constructeur
 	Hello(std::string hello);
+
+	//methode d'affichage
 	void sayHello(void);
+	
 private:
 	std::string hello_;
 };
